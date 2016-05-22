@@ -5,7 +5,7 @@ class Keywords
 	public static function generateKeywords($str)
     {
         $min_word_length = 3;
-        $avoid = ['the','to','i','am','is','are','he','she','a','an','here','there','can','could','were','has','have','had','been','welcome','of','home','&nbsp;','&ldquo;','words','into','this','there'];
+        $avoid = ['the','to','i','am','is','are','he','she','a','an','and','here','there','can','could','were','has','have','had','been','welcome','of','home','&nbsp;','&ldquo;','words','into','this','there'];
         $strip_arr = ["," ,"." ,";" ,":", "\"", "'", "“","”","(",")", "!","?"];
 
         $str_clean = str_replace( $strip_arr, "", $str);
